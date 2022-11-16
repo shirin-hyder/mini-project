@@ -3,7 +3,7 @@
 <x-assets.datatables />
 
 @push('page-css')
-	
+
 @endpush
 
 @push('page-header')
@@ -19,7 +19,7 @@
 @section('content')
 <div class="row">
 	<div class="col-md-12">
-	
+
 		<!-- Recent Orders -->
 		<div class="card">
 			<div class="card-body">
@@ -37,15 +37,15 @@
 							</tr>
 						</thead>
 						<tbody>
-							
-							
+
+
 						</tbody>
 					</table>
 				</div>
 			</div>
 		</div>
 		<!-- /Expired Products -->
-		
+
 	</div>
 </div>
 
@@ -68,7 +68,7 @@
                 {data: 'action', name: 'action', orderable: false, searchable: false},
             ]
         });
-        
+
     });
-</script> 
+</script>
 @endpush

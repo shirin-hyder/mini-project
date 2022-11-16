@@ -30,9 +30,9 @@
                 </div>
                 <div class="dash-widget-info">
                     <h6 class="text-muted">Today Sales Cash</h6>
-                    <div class="progress progress-sm">
+                    {{-- <div class="progress progress-sm">
                         <div class="progress-bar bg-primary w-50"></div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -49,11 +49,11 @@
                     </div>
                 </div>
                 <div class="dash-widget-info">
-                    
+
                     <h6 class="text-muted">Product Categories</h6>
-                    <div class="progress progress-sm">
+                    {{-- <div class="progress progress-sm">
                         <div class="progress-bar bg-success w-50"></div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -70,11 +70,11 @@
                     </div>
                 </div>
                 <div class="dash-widget-info">
-                    
+
                     <h6 class="text-muted">Expired Products</h6>
-                    <div class="progress progress-sm">
+                    {{-- <div class="progress progress-sm">
                         <div class="progress-bar bg-danger w-50"></div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -91,11 +91,11 @@
                     </div>
                 </div>
                 <div class="dash-widget-info">
-                    
+
                     <h6 class="text-muted">System Users</h6>
-                    <div class="progress progress-sm">
+                    {{-- <div class="progress progress-sm">
                         <div class="progress-bar bg-warning w-50"></div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -105,7 +105,7 @@
     <div class="col-md-12 col-lg-6">
         <div class="card card-table p-3">
             <div class="card-header">
-                <h4 class="card-title ">Today Sales</h4>
+                <h4 class="card-title ">Recent Sales</h4>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -119,7 +119,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                                                                                      
+
                         </tbody>
                     </table>
                 </div>
@@ -128,7 +128,7 @@
     </div>
 
     <div class="col-md-12 col-lg-6">
-                    
+
         <!-- Pie Chart -->
         <div class="card card-chart">
             <div class="card-header">
@@ -141,10 +141,10 @@
             </div>
         </div>
         <!-- /Pie Chart -->
-        
-    </div>	
-    
-    
+
+    </div>
+
+
 </div>
 
 @endsection
@@ -163,8 +163,8 @@
 				{data: 'date', name: 'date'},
             ]
         });
-        
+
     });
-</script> 
+</script>
 <script src="{{asset('assets/plugins/chart.js/Chart.bundle.min.js')}}"></script>
 @endpush

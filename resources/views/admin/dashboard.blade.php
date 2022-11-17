@@ -112,8 +112,8 @@
                     <table id="sales-table" class="datatable table table-hover table-center mb-0">
                         <thead>
                             <tr>
-                                <th>Medicine</th>
-                                <th>Quantity</th>
+                                <th>Customer Name</th>
+                                <th>Customer Phone</th>
                                 <th>Total Price</th>
                                 <th>Date</th>
                             </tr>
@@ -157,8 +157,8 @@
             serverSide: true,
             ajax: "{{route('sales.index')}}",
             columns: [
-                {data: 'product', name: 'product'},
-                {data: 'quantity', name: 'quantity'},
+                {data: 'name', name: 'name'},
+                {data: 'phone', name: 'phone'},
                 {data: 'total_price', name: 'total_price'},
 				{data: 'date', name: 'date'},
             ]

@@ -4,7 +4,7 @@
 
 
 @push('page-css')
-    
+
 @endpush
 
 @push('page-header')
@@ -23,7 +23,7 @@
 @section('content')
 <div class="row">
 	<div class="col-md-12">
-	
+
 		@isset($sales)
             <!--  Sales Report -->
             <div class="card">
@@ -32,8 +32,8 @@
                         <table id="sales-table" class="datatable table table-hover table-center mb-0">
                             <thead>
                                 <tr>
-                                    <th>Medicine Name</th>
-                                    <th>Quantity</th>
+                                    <th>Customer Name</th>
+                                    <th>Customer Phone</th>
                                     <th>Total Price</th>
                                     <th>Date</th>
                                 </tr>
@@ -42,18 +42,19 @@
                                 @foreach ($sales as $sale)
                                     @if (!(empty($sale->product->purchase)))
                                         <tr>
-                                            <td>
+                                            {{-- <td>
                                                 {{$sale->product->purchase->product}}
                                                 @if (!empty($sale->product->purchase->image))
                                                     <span class="avatar avatar-sm mr-2">
                                                     <img class="avatar-img" src="{{asset("storage/purchases/".$sale->product->purchase->image)}}" alt="image">
                                                     </span>
                                                 @endif
-                                            </td>
-                                            <td>{{$sale->quantity}}</td>
+                                            </td> --}}
+                                            <td>{{$sale->name}}</td>
+                                            <td>{{$sale->phone}}</td>
                                             <td>{{AppSettings::get('app_currency', '$')}} {{($sale->total_price)}}</td>
                                             <td>{{date_format(date_create($sale->created_at),"d M, Y")}}</td>
-                                            
+
                                         </tr>
                                     @endif
                                 @endforeach
@@ -64,8 +65,8 @@
             </div>
             <!-- / sales Report -->
         @endisset
-       
-		
+
+
 	</div>
 </div>
 
@@ -113,7 +114,7 @@
 <script>
     $(document).ready(function(){
         $('#sales-table').DataTable({
-			dom: 'Bfrtip',		
+			dom: 'Bfrtip',
 			buttons: [
 				{
 				extend: 'collection',

@@ -3,7 +3,7 @@
 <x-assets.datatables />
 
 @push('page-css')
-    
+
 @endpush
 
 @push('page-header')
@@ -24,7 +24,7 @@
 @section('content')
 <div class="row">
 	<div class="col-md-12">
-	
+
 		<!--  Sales -->
 		<div class="card">
 			<div class="card-body">
@@ -32,22 +32,22 @@
 					<table id="sales-table" class="datatable table table-hover table-center mb-0">
 						<thead>
 							<tr>
-								<th>Medicine Name</th>
-								<th>Quantity</th>
+								<th>Customer Name</th>
+								<th>Customer Phone</th>
 								<th>Total Price</th>
 								<th>Date</th>
 								<th class="action-btn">Action</th>
 							</tr>
 						</thead>
 						<tbody>
-							
+
 						</tbody>
 					</table>
 				</div>
 			</div>
 		</div>
 		<!-- / sales -->
-		
+
 	</div>
 </div>
 
@@ -62,14 +62,14 @@
             serverSide: true,
             ajax: "{{route('sales.index')}}",
             columns: [
-                {data: 'product', name: 'product'},
-                {data: 'quantity', name: 'quantity'},
+                {data: 'name', name: 'name'},
+                {data: 'phone', name: 'phone'},
                 {data: 'total_price', name: 'total_price'},
 				{data: 'date', name: 'date'},
                 {data: 'action', name: 'action', orderable: false, searchable: false},
             ]
         });
-        
+
     });
-</script> 
+</script>
 @endpush

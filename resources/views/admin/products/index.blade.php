@@ -3,7 +3,7 @@
 <x-assets.datatables />
 
 @push('page-css')
-	
+
 @endpush
 
 @push('page-header')
@@ -22,7 +22,7 @@
 @section('content')
 <div class="row">
 	<div class="col-md-12">
-	
+
 		<!-- Products -->
 		<div class="card">
 			<div class="card-body">
@@ -32,8 +32,8 @@
 							<tr>
 								<th>Product Name</th>
 								<th>Category</th>
-								<th>Price</th>
-								<th>Quantity</th>
+								<th>Selling Price</th>
+								<th>Stock</th>
 								<th>Discount</th>
 								<th>Expiry Date</th>
 								<th class="action-btn">Action</th>
@@ -41,14 +41,14 @@
 						</thead>
 						<tbody>
 
-														
+
 						</tbody>
 					</table>
 				</div>
 			</div>
 		</div>
 		<!-- /Products -->
-		
+
 	</div>
 </div>
 
@@ -71,7 +71,7 @@
                 {data: 'action', name: 'action', orderable: false, searchable: false},
             ]
         });
-        
+
     });
-</script> 
+</script>
 @endpush

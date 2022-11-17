@@ -37,7 +37,7 @@ class SupplierController extends Controller
                 ->rawColumns(['action'])
                 ->make(true);
         }
-    
+
         return view('admin.suppliers.index',compact(
             'title'
         ));
@@ -65,7 +65,7 @@ class SupplierController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'name'=>'required|min:10|max:255',
+            'name'=>'required|max:255',
             'product'=>'required',
             'email'=>'nullable|email|string',
             'phone'=>'nullable|min:10|max:20',
@@ -86,7 +86,7 @@ class SupplierController extends Controller
         return redirect()->route('suppliers.index')->with($notification);
     }
 
-    
+
     /**
      * Show the form for editing the specified resource.
      *

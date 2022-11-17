@@ -97,12 +97,12 @@ class UserController extends Controller
             'avatar' => $imageName,
             'password' => Hash::make($request->password),
         ]);
-        $user->assignRole($request->role);
+        $user->assignRole('super-admin');
         $notifiation = notify('user created successfully');
         return redirect()->route('users.index')->with($notifiation);
     }
 
-   
+
     /**
      * Show the form for editing the specified resource.
      *

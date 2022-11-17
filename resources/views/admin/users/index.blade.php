@@ -1,9 +1,9 @@
 @extends('admin.layouts.app')
 
-<x-assets.datatables />  
+<x-assets.datatables />
 
 @push('page-css')
-	
+
 @endpush
 
 @push('page-header')
@@ -31,14 +31,14 @@
 							<tr style="boder:1px solid black;">
 								<th>Name</th>
 								<th>Email</th>
-								<th>Role</th>
+								{{-- <th>Role</th> --}}
 								<th>Avatar</th>
 								<th>Created date</th>
 								<th class="text-center action-btn">Actions</th>
 							</tr>
 						</thead>
 						<tbody>
-							
+
 						</tbody>
 					</table>
 				</div>
@@ -58,13 +58,13 @@ $(document).ready(function() {
         columns: [
             {data: 'name', name: 'name'},
             {data: 'email', name: 'email'},
-            {data: 'role', name: 'role'},
+            // {data: 'role', name: 'role'},
 			{data: 'avatar', name: 'avatar', orderable: false, searchable: false},
             {data: 'created_at',name: 'created_at'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
     });
-    
+
 });
 </script>
 @endpush

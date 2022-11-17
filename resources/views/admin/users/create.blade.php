@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @push('page-css')
-    
+
 @endpush
 
 @push('page-header')
@@ -17,7 +17,7 @@
 
 <div class="row">
     <div class="col-md-12 col-lg-12">
-    
+
         <div class="card card-table">
             <div class="card-header">
                 <h4 class="card-title ">Add User</h4>
@@ -39,7 +39,7 @@
                                     <input type="email" name="email" class="form-control" placeholder="example@gmail.com">
                                 </div>
                             </div>
-                            <div class="col-12">
+                            {{-- <div class="col-12">
                                 <div class="form-group">
                                     <label>Role</label>
                                     <div class="form-group">
@@ -50,7 +50,7 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-12">
                                 <div class="form-group">
                                     <label>Picture</label>
@@ -79,14 +79,14 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 
-    
+
 </div>
 
 @endsection
 
 @push('page-js')
-    
+
 @endpush

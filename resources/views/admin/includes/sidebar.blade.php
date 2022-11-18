@@ -72,19 +72,19 @@
 				</li>
 				@endcan
 
-				{{-- @can('view-access-control')
+				@can('view-access-control')
 				<li class="submenu">
 					<a href="#"><i class="fe fe-lock"></i> <span> Access Control</span> <span class="menu-arrow"></span></a>
 					<ul style="display: none;">
-						@can('view-permission')
+						{{-- @can('view-permission')
 						<li><a class="{{ route_is('permissions.index') ? 'active' : '' }}" href="{{route('permissions.index')}}">Permissions</a></li>
-						@endcan
+						@endcan --}}
 						@can('view-role')
 						<li><a class="{{ route_is('roles.*') ? 'active' : '' }}" href="{{route('roles.index')}}">Roles</a></li>
 						@endcan
 					</ul>
 				</li>
-				@endcan --}}
+				@endcan
 
 				@can('view-users')
 				<li class="{{ route_is('users.*') ? 'active' : '' }}">

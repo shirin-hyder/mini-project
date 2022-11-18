@@ -120,7 +120,7 @@ class SaleController extends Controller
             // $product = Purchase::where('quantity', '<=', 1)->first();
             // event(new PurchaseOutStock($product));
             // end of notification
-            $notification = notify("Product 1 is running out of stock!!!");
+            $notification = notify($purchased_item->product. " is running out of stock!!!");
         }
 
         if ($sold_product2) {
@@ -133,7 +133,7 @@ class SaleController extends Controller
                 $total_price += ($request->quantity_2) * ($sold_product2->price);
             }
             if ($new_quantity2 <= 1 && $new_quantity2 != 0) {
-                $notification = notify("Product 2 is running out of stock!!!");
+                $notification = notify($purchased_item2->product. " is running out of stock!!!");
             }
         }
         if ($sold_product3) {
@@ -146,7 +146,7 @@ class SaleController extends Controller
                 $total_price += ($request->quantity_3) * ($sold_product3->price);
             }
             if ($new_quantity3 <= 1 && $new_quantity3 != 0) {
-                $notification = notify("Product 3 is running out of stock!!!");
+                $notification = notify($purchased_item3->product. " is running out of stock!!!");
             }
         }
         if ($sold_product4) {
@@ -159,7 +159,7 @@ class SaleController extends Controller
                 $total_price += ($request->quantity_4) * ($sold_product4->price);
             }
             if ($new_quantity4 <= 1 && $new_quantity4 != 0) {
-                $notification = notify("Product 4 is running out of stock!!!");
+                $notification = notify($purchased_item4->product. " is running out of stock!!!");
             }
         }
         if ($sold_product5) {
@@ -172,7 +172,7 @@ class SaleController extends Controller
                 $total_price += ($request->quantity_5) * ($sold_product5->price);
             }
             if ($new_quantity5 <= 1 && $new_quantity5 != 0) {
-                $notification = notify("Product 5 is running out of stock!!!");
+                $notification = notify($purchased_item5->product. " is running out of stock!!!");
             }
         }
         if ($sold_product6) {
@@ -185,7 +185,7 @@ class SaleController extends Controller
                 $total_price += ($request->quantity_6) * ($sold_product6->price);
             }
             if ($new_quantity6 <= 1 && $new_quantity6 != 0) {
-                $notification = notify("Product 6 is running out of stock!!!");
+                $notification = notify($purchased_item6->product. " is running out of stock!!!");
             }
         }
         if ($sold_product7) {
@@ -198,7 +198,7 @@ class SaleController extends Controller
                 $total_price += ($request->quantity_7) * ($sold_product7->price);
             }
             if ($new_quantity7 <= 1 && $new_quantity7 != 0) {
-                $notification = notify("Product 7 is running out of stock!!!");
+                $notification = notify($purchased_item7->product. " is running out of stock!!!");
             }
         }
         if ($sold_product8) {
@@ -211,7 +211,7 @@ class SaleController extends Controller
                 $total_price += ($request->quantity_8) * ($sold_product8->price);
             }
             if ($new_quantity8 <= 1 && $new_quantity8 != 0) {
-                $notification = notify("Product 8 is running out of stock!!!");
+                $notification = notify($sold_product8->product. " is running out of stock!!!");
             }
         }
         if ($sold_product9) {
@@ -224,7 +224,7 @@ class SaleController extends Controller
                 $total_price += ($request->quantity_9) * ($sold_product9->price);
             }
             if ($new_quantity9 <= 1 && $new_quantity9 != 0) {
-                $notification = notify("Product 9 is running out of stock!!!");
+                $notification = notify($sold_product9->product. " is running out of stock!!!");
             }
         }
         if ($sold_product10) {
@@ -237,7 +237,7 @@ class SaleController extends Controller
                 $total_price += ($request->quantity_10) * ($sold_product10->price);
             }
             if ($new_quantity10 <= 1 && $new_quantity10 != 0) {
-                $notification = notify("Product 10 is running out of stock!!!");
+                $notification = notify($purchased_item10->product. " is running out of stock!!!");
             }
         }
 

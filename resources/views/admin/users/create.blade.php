@@ -39,7 +39,7 @@
                                     <input type="email" name="email" class="form-control" placeholder="example@gmail.com">
                                 </div>
                             </div>
-                            {{-- <div class="col-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>Role</label>
                                     <div class="form-group">
@@ -50,7 +50,7 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div> --}}
+                            </div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <label>Picture</label>
